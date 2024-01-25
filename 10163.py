@@ -1,5 +1,6 @@
 
 def paper_info(paper,k):
+
     x_start, y_start, length, height = map(int,input().split())
     for i in range(length):
         for j in range(height):
@@ -7,13 +8,17 @@ def paper_info(paper,k):
             
     return paper
 
+
 def paper_count(paper,k):
+
     count = 0
     for i in range(1001):
         for j in range(1001):
             if paper[1001*i+j] == k:
                 count += 1
+
     return count   
+
 
 def main():
     # 1001*1001 판을 만든다.
